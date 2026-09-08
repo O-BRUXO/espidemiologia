@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block titulo %}Início Epidemiológica{% endblock titulo %}
+
+{% block conteudo %}
+
+<section class="introducao">
+
+    <h2>Modelos SI e SIS</h2>
+
+    <p>
+        Este projeto apresenta uma simulação computacional capaz de gerar
+        gráficos da evolução de doenças utilizando os modelos epidemiológicos
+        <strong>SI</strong> e <strong>SIS</strong>.
+    </p>
+
+    <p>
+        O objetivo é permitir a visualização do comportamento da população
+        ao longo do tempo, mostrando como o número de indivíduos
+        suscetíveis e infectados varia conforme os parâmetros definidos
+        pelo usuário.
+    </p>
+
+    <a href="{{ url_for('formulario_euler') }}" class="botao">
+        Gerar Euler
+    </a>
+
+    <a href="{{ url_for('formulario_analitico') }}" class="botao">
+        Gerar Analitico
+    </a>
+    <a href="{{ url_for('formulario_ambos') }}" class="botao">
+        Ambos
+    </a>
+
+</section>
+
+<section class="informacoes">
+
+    <div class="card">
+        <h3>Modelo SI</h3>
+        <p>
+            No modelo SI, indivíduos suscetíveis podem se tornar infectados,
+            permanecendo infectados durante toda a simulação.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Modelo SIS</h3>
+        <p>
+            No modelo SIS, indivíduos infectados podem se recuperar e voltar
+            ao estado suscetível, permitindo novos ciclos de infecção.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Gráficos</h3>
+        <p>
+            Os resultados são exibidos em gráficos que facilitam a análise
+            da propagação da doença e da influência dos parâmetros da
+            simulação.
+{% endblock conteudo %}

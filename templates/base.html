@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação Epidemiológica</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+
+    <header>
+ <h1> {% block titulo%}   Simulação Epidemiológica {% endblock titulo%}   </h1>   
+
+        <nav>
+            <ul>
+                <li><a href="{{url_for('index')}}">Início</a></li>
+                <li><a href="{{url_for('visualizar_graficos')}}">Modelo SI</a></li>
+                <li><a href="{{url_for('index')}}">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+{% block conteudo%}
+{% endblock conteudo%}
+    </main>
+
+    <footer>
+        <p>Projeto de Simulação Epidemiológica • 2026</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,301 @@
+/* ===== RESET ===== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* ===== HEADER ===== */
+
+header{
+    background: #1f2937;
+    color: white;
+    padding: 20px;
+}
+
+header h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+nav a:hover{
+    color: #60a5fa;
+}
+
+/* ===== MAIN ===== */
+
+main{
+    flex: 1;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* ===== INTRODUÇÃO ===== */
+
+.introducao{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.introducao h2{
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 20px;
+}
+
+.introducao p{
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* ===== BOTÃO ===== */
+
+.botao{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.botao:hover{
+    background: #1d4ed8;
+}
+
+/* ===== CARDS ===== */
+
+.informacoes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card{
+    background: white;
+    width: 320px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    transition: .3s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+.card h3{
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+.card p{
+    line-height: 1.6;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+    background: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 768px){
+
+    nav ul{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .introducao h2{
+        font-size: 1.7rem;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   FORMULÁRIO
+   ========================================================= */
+
+.formulario {
+    width: 90%;
+    max-width: 550px;
+    margin: 60px auto;
+    padding: 35px;
+
+    background: #ffffff;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Título */
+
+.formulario h2 {
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    color:  #1f2937;
+
+    font-size: 26px;
+}
+
+
+/* =========================================================
+   CAMPOS
+   ========================================================= */
+
+.campo {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 22px;
+}
+
+
+.campo label {
+    margin-bottom: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    color: #344e41;
+}
+
+
+/* Inputs */
+
+.campo input {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 2px solid #d8e2dc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+/* Quando clicar no input */
+
+.campo input:focus {
+    border-color: #40916c;
+
+    box-shadow: 0 0 0 3px rgba(64, 145, 108, 0.15);
+}
+
+
+/* =========================================================
+   BOTÃO
+   ========================================================= */
+
+.formulario button {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 8px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background:#1d4ed8;
+
+    color: white;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Hover do botão */
+
+.formulario button:hover {
+    background: #1b4332;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Clique */
+
+.formulario button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .formulario {
+        width: 92%;
+
+        padding: 25px;
+
+        margin: 30px auto;
+    }
+
+    .formulario h2 {
+        font-size: 22px;
+    }
+
+}

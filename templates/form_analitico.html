@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{%block titulo%} Analitico{%endblock titulo%}
+{% block conteudo %}
+
+<form action="/form_analitico" method="POST" class="formulario">
+
+    <h2>Parâmetros da Simulação</h2>
+
+    <div class="campo">
+
+        <label>
+            Coeficiente de Transmissão (β)
+        </label>
+
+        <input
+            type="number"
+            name="beta"
+            step="0.01"
+            min="0"
+            required
+        >
+
+    </div>
+
+
+    <div class="campo">
+
+        <label>
+            Tempo da Simulação (dias)
+        </label>
+
+        <input
+            type="number"
+            name="tempo"
+            min="1"
+            required
+        >
+
+    </div>
+
+
+
+    <button type="submit">
+        Gerar Gráfico
+    </button>
+
+</form>
+
+{% endblock conteudo %}
