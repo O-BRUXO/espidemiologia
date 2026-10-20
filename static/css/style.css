@@ -20,7 +20,11 @@ body{
 /* ===== HEADER ===== */
 
 header{
+<<<<<<< HEAD
     background: #0a2955;
+=======
+    background: #1f2937;
+>>>>>>> 948c23f8a703f7e005720378496121904bc0a436
     color: white;
     padding: 20px;
 }
@@ -298,6 +302,7 @@ footer{
         font-size: 22px;
     }
 
+<<<<<<< HEAD
 }
 
 
@@ -360,4 +365,6 @@ footer{
     margin-top: 16px;
     margin-bottom: 0;
     display: block;
+=======
+>>>>>>> 948c23f8a703f7e005720378496121904bc0a436
 }
