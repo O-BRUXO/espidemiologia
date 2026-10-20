@@ -7,15 +7,34 @@
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
 </head>
 <body>
+<style>
+    .fefe {
+        background-color: #1d4ed8;
+        border-radius: 8px;
+        margin: 5px;
+        transition: background-color 0.3s ease;
+    }
 
+    .fefe:hover {
+        background-color: #1e40af;
+    }
+
+    .fefe a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px 18px;
+        display: block;
+        font-weight: bold;
+    }
+</style>
     <header>
  <h1> {% block titulo%}   Simulação Epidemiológica {% endblock titulo%}   </h1>   
 
         <nav>
             <ul>
-                <li><a href="{{url_for('index')}}">Início</a></li>
-                <li><a href="{{url_for('visualizar_graficos')}}">Modelo SI</a></li>
-                <li><a href="{{url_for('sobre')}}">Sobre</a></li>
+                <li class="fefe"><a href="{{url_for('index')}}">Início</a></li>
+                <li class="fefe"><a href="{{url_for('visualizar_graficos')}}">Modelo SI</a></li>
+                <li class="fefe"><a href="{{url_for('sobre')}}">Sobre</a></li>
             </ul>
         </nav>
     </header>
